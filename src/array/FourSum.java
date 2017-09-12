@@ -103,3 +103,4 @@ public class FourSum {
         System.out.println(prob.fourSum(nums, target));
     }
 }
+// 参考：http://www.fiw3.com/m/Java-Leetcode-zhong-KSum-suan-fa-wen-ti-xiang-jie.html
