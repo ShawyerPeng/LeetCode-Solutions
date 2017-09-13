@@ -2,77 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="515e8a06-a7c1-4d9d-ba6a-fe3582d7af62" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/binary_search/FindMinimumInRotatedSortedArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/binary_search/FindMinimumInRotatedSortedArrayII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/binary_search/FindPeakElement.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/binary_search/FirstBadVersion.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/binary_search/MedianOfTwoSortedArrays.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/binary_search/MergeSortedArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/binary_search/Powxn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/binary_search/RecoverSortedArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/binary_search/RotateString.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/binary_search/SearchA2DMatrix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/binary_search/SearchA2DMatrixII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/binary_search/SearchForARange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/binary_search/SearchInRotatedSortedArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/binary_search/SearchInRotatedSortedArrayII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/binary_search/SearchInsertPosition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/binary_search/SortedArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/binary_search/Sqrtx.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/CoinChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/CoinPath.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/DecodeWaysII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/FourKeysKeyboard.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/KInversePairsArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/KSum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/LongestIncreasingSubsequence.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/MaximumLengthOfPairChain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/MaximumSubarray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/MinimumPathSum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/NonNegativeIntegersWithoutConsecutiveOnes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/NumberOfLongestIncreasingSubsequence.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/OutOfBoundaryPaths.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/PalindromicSubstrings.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/PascalTriangleII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/RemoveBoxes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/ShoppingOffers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/StrangePrinter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/Triangle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/TwoKeysKeyboard.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dynamic_programming/WordBreak.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/linked_list/AddTwoNumbers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/linked_list/AddTwoNumbersII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/linked_list/DeleteNodeInALinkedList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/linked_list/ListNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/linked_list/RemoveDuplicatesFromSortedList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/linked_list/RemoveDuplicatesFromSortedListII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/linked_list/RemoveElement.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/linked_list/RemoveLinkedListElements.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/linked_list/ReverseLinkedList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/linked_list/ReverseLinkedListBetween.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/linked_list/ReverseLinkedListII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/linked_list/SortList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/permutation/NQueens.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/permutation/NextPermutation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/permutation/Permutations.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/permutation/PermutationsII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/permutation/Subsets.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/permutation/SubsetsII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sort/InsertionSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sort/MergeSortNonRec.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sort/MergeSortRec.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sort/QuickSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sort/QuickSort2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/template/BFS.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/template/BinarySearch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/template/DFS.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/template/Partition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/template/Permutation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/template/Subsets.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/template/BinaryTree.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/template/DivideAndConquer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/template/Traverse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/template/TreeNode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/template/UnionFind.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/array/FourSum.java" afterPath="$PROJECT_DIR$/src/array/FourSum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/binary_search/BinarySearch.java" afterPath="$PROJECT_DIR$/src/binary_search/BinarySearch.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,55 +20,44 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="PermutationsII.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/permutation/PermutationsII.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Permutations.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/permutation/Permutations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="32" column="40" lean-forward="false" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NextPermutation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/permutation/NextPermutation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NQueens.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/permutation/NQueens.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BFS.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/template/BFS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-131">
-              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="294">
+              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinaryTree.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/template/BinaryTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="65" column="28" lean-forward="true" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+              <folding>
+                <element signature="e#2403#2413#0" expanded="true" />
+                <element signature="e#2532#2541#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Traverse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/template/Traverse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DivideAndConquer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/template/DivideAndConquer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="6" column="50" lean-forward="false" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -191,11 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/dynamic_programming/NumberOfLongestIncreasingSubsequence.java" />
-        <option value="$PROJECT_DIR$/src/dynamic_programming/CoinPath.java" />
-        <option value="$PROJECT_DIR$/src/dynamic_programming/TwoKeysKeyboard.java" />
-        <option value="$PROJECT_DIR$/src/dynamic_programming/FourKeysKeyboard.java" />
-        <option value="$PROJECT_DIR$/src/dynamic_programming/MaximumLengthOfPairChain.java" />
         <option value="$PROJECT_DIR$/src/dynamic_programming/DecodeWaysII.java" />
         <option value="$PROJECT_DIR$/src/dynamic_programming/ShoppingOffers.java" />
         <option value="$PROJECT_DIR$/src/dynamic_programming/KInversePairsArray.java" />
@@ -242,6 +161,11 @@
         <option value="$PROJECT_DIR$/src/permutation/PermutationsII.java" />
         <option value="$PROJECT_DIR$/src/permutation/NQueens.java" />
         <option value="$PROJECT_DIR$/src/permutation/Permutations.java" />
+        <option value="$PROJECT_DIR$/src/template/UnionFind.java" />
+        <option value="$PROJECT_DIR$/src/template/TreeNode.java" />
+        <option value="$PROJECT_DIR$/src/template/DivideAndConquer.java" />
+        <option value="$PROJECT_DIR$/src/template/Traverse.java" />
+        <option value="$PROJECT_DIR$/src/template/BinaryTree.java" />
       </list>
     </option>
   </component>
@@ -316,24 +240,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="permutation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -828,15 +734,16 @@
       <workItem from="1505041550041" duration="14606000" />
       <workItem from="1505103653162" duration="21933000" />
       <workItem from="1505134806856" duration="8072000" />
-      <workItem from="1505188502894" duration="21114000" />
+      <workItem from="1505188502894" duration="25484000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65725000" />
+    <option name="totallyTimeSpent" value="70095000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="999" y="0" width="921" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -845,11 +752,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3202186" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3202186" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3226152" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24911453" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24911453" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -906,41 +813,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/dynamic_programming/TwoKeysKeyboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dynamic_programming/FourKeysKeyboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dynamic_programming/MaximumLengthOfPairChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dynamic_programming/DecodeWaysII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dynamic_programming/ShoppingOffers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dynamic_programming/KInversePairsArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -1177,14 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/BinarySearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-635">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/binary_search/RotateString.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -1236,14 +1100,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/BFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-131">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/template/Partition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -1284,16 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/DFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/permutation/NextPermutation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -1310,22 +1156,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/permutation/PermutationsII.java">
+    <entry file="file://$PROJECT_DIR$/src/permutation/Permutations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        <state relative-caret-position="630">
+          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/permutation/Permutations.java">
+    <entry file="file://$PROJECT_DIR$/src/permutation/PermutationsII.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="40" lean-forward="false" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+        <state relative-caret-position="168">
+          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/DFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/UnionFind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="44" column="25" lean-forward="true" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/BFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/BinarySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/DivideAndConquer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="50" lean-forward="false" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/Traverse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="65" column="28" lean-forward="true" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+          <folding>
+            <element signature="e#2403#2413#0" expanded="true" />
+            <element signature="e#2532#2541#0" expanded="true" />
           </folding>
         </state>
       </provider>
