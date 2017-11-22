@@ -1,5 +1,6 @@
 # 简介
-
+BFS：Queue
+DFS：Stack
 
 # 面试题分类
 ## 遍历二叉树
