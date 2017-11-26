@@ -1,7 +1,6 @@
 package template;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class DFS {
     private void dfs(List<List<Integer>> sub, List<Integer> list, int pos, int[] nums) {
@@ -20,6 +19,25 @@ public class DFS {
             } else
                 break;
         }
+    }
+
+    /**
+     * DFS的非递归方法
+     */
+    public boolean dfsStack(TreeNode root) {
+        if (root == null) return true;
+
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.empty()) {
+            TreeNode p = stack.pop();
+            if (p == null) {
+                continue;
+            }
+            stack.push(p.left);
+            stack.push(p.right);
+        }
+        return true;
     }
 
     public static void main(String[] args) {
