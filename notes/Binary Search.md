@@ -8,13 +8,22 @@
 
 # 二分法模板的四点要素
 * start + 1 < end
-* start + (end - start) / 2
-* A[mid] ==, <, >
-* A[start] A[end] ? target
+* start + (end - start) / 2，可以避免 (start + end) / 2, 可能造成的溢出
+* A[mid] ==, <, >，三种情况先分开考虑，写完后也许可以合并. 范围缩小要用 start = mid 或 end = mid
+* A[start] A[end] ? target，当循环结束的时候，并不能确定 start, end 到底哪个是所求解，要分别判断
 
 # 二分法关键
 * 头尾指针，取中点，判断往哪儿走
 * 寻找满足某个条件第一个或是最后一个位置
+* 保留剩下来一定有解的那一半
+
+# 两类二分法
+二分位置 Binary Search on index
+二分答案 Binary Search on result
+
+# 理解二分法的三个层次
+* 头尾指针，取中点，判断往哪走
+* 寻找满足某个条件的第一个或是最后一个位置
 * 保留剩下来一定有解的那一半
 
 # 题目类型
@@ -143,3 +152,13 @@ public static int binarySearch(int[] nums, int target) {
 [算法之美——二分法](https://blog.bcmeng.com/post/binarysearch.html)  
 [一起 lintcode ------- 二分查找看这篇就够了](http://community.bittiger.io/topic/241/%E4%B8%80%E8%B5%B7lintcode-%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E7%9C%8B%E8%BF%99%E7%AF%87%E5%B0%B1%E5%A4%9F%E4%BA%86)  
 [LintCode 二分查找题总结](http://blog.csdn.net/luoshengkim/article/details/52103427)  
+[LeetCode-Binary-Search](http://52.14.116.56/2017/08/23/LeetCode/LeetCode-Binary-Search/)  
+[Binary Search](https://lefttree.gitbooks.io/leetcode-categories/BinarySearch/binarySearch.html)  
+[关于二分查找 (Binary Search) 及其变种形式的总结](https://simpleandstupid.com/2014/12/23/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E7%9A%84%E6%80%BB%E7%BB%93/)  
+[Binary Search 二分查找总结](http://pengmeng.me/2016/03/07/binary-search-note.html)  
+[Binary Search(二分搜索) 总结](https://dyang2016.wordpress.com/2016/11/07/binary-search%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2%E6%80%BB%E7%BB%93/)  
+[漫谈二分查找 - Binary Search](http://duanple.blog.163.com/blog/static/709717672009049528185/)  
+[数组中的二分法查找](http://www.jianshu.com/p/7c17cc56e21e)  
+[binary search 及扩展出来的几个问题讨论](http://shmilyaw-hotmail-com.iteye.com/blog/1626910)  
+[二分查找有几种写法？它们的区别是什么？](https://www.zhihu.com/question/36132386)  
+[把二分查找算法写正确需要注意的地方](http://www.cppblog.com/converse/archive/2009/09/21/96893.aspx)  
