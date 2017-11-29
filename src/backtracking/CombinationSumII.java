@@ -1,4 +1,4 @@
-package depth_first_search;
+package backtracking;
 
 import java.util.ArrayList;
 import java.util.Arrays;

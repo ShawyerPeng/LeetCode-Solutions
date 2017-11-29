@@ -1,4 +1,4 @@
-package permutation;
+package backtracking;
 
 public class NQueens {
 

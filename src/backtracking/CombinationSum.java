@@ -1,4 +1,4 @@
-package depth_first_search;
+package backtracking;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,7 +14,7 @@ public class CombinationSum {
         List<List<Integer>> results = new ArrayList<>();
         if (candidates == null || candidates.length == 0) return results;
 
-        // 先将candidate数组排序避免重复搜索
+        // 先将candidate数组排序避免重复搜索，为后面的剪枝做准备
         Arrays.sort(candidates);
 
         // 中间结果
@@ -38,6 +38,7 @@ public class CombinationSum {
                 // 典型的先加入元素，再进行搜索，递归回来再移出元素的DFS解法
                 path.add(candidates[i]);
                 // 如果选定一个 candidates[i]，则需要继续寻找和为 target-candidate[i] 的 combination
+                // 因為C中每个数可以选多次，所以从i開始，而不是i+1
                 dfs(i, target - candidates[i], path, results, candidates);
                 path.remove(path.size() - 1);
 
