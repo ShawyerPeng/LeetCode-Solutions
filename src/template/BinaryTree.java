@@ -23,14 +23,14 @@ public class BinaryTree {
     }
 
     public List<Integer> inorderTraversal(TreeNode root) {
-        ArrayList<Integer> result = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
+        List<Integer> result = new ArrayList<>();
         if (root == null) return result;
 
         TreeNode cur = root;
         while (cur != null || !stack.empty()) {
             while (cur != null) {
-                stack.add(cur);
+                stack.push(cur);
                 cur = cur.left;
             }
             cur = stack.pop();

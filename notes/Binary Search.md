@@ -163,3 +163,4 @@ public static int binarySearch(int[] nums, int target) {
 [二分查找有几种写法？它们的区别是什么？](https://www.zhihu.com/question/36132386)  
 [把二分查找算法写正确需要注意的地方](http://www.cppblog.com/converse/archive/2009/09/21/96893.aspx)  
 [二分搜索总结 - Kevin's Destiny](https://yunpengxiao.wordpress.com/2016/01/30/%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2/)  
+[Leetcode 总结，二分法一般性总结](http://www.aizhuanji.com/a/7WMM0NaW.html)  
