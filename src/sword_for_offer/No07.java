@@ -3,7 +3,7 @@ package sword_for_offer;
 import java.util.Stack;
 
 /**
- * 问题：用两个栈实现队列。用两个栈来实现一个队列，完成队列的 Push 和 Pop 操作。 队列中的元素为 int 类型。
+ * 问题：用两个栈实现队列。用两个栈来实现一个队列，完成队列的 Push 和 Pop 操作。队列中的元素为 int 类型。
  * 思路：始终维护 s1 作为存储空间，以 s2 作为临时缓冲区。
  * 入队时，将元素压入 s1。
  * 出队时，将 s1 的元素逐个 “倒入”（弹出并压入）s2，将 s2 的顶元素弹出作为出队元素，之后再将 s2 剩下的元素逐个 “倒回”s1。
@@ -35,9 +35,7 @@ public class No07 {
             }
         }
         // stack2的栈顶元素其实就是stack1的栈底元素，我们要pop队列的队首元素其实也就是pop栈的栈底元素
-        int result = stack2.peek();
-        stack2.pop();
-        return result;
+        return stack2.pop();
     }
 
     public static void main(String[] args) {

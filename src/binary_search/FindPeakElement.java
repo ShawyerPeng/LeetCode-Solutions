@@ -34,8 +34,30 @@ public class FindPeakElement {
         }
     }
 
+    public int findPeakElement2(int[] nums) {
+        if (nums == null || nums.length == 0) return -1;
+        if (nums.length == 1) return 0;
+
+        int left = 0;
+        int right = nums.length;
+        while (left + 1 < right) {
+            int mid = left + (right - left) / 2;
+            // 如果一个数nums[mid]比前面一个和后面一个数都要大，那么就是我们要找的数(peak element)
+            if ((mid == 0 || nums[mid] > nums[mid - 1]) &&
+                    (mid == nums.length - 1 || nums[mid] > nums[mid + 1]))
+                return mid;
+            else if (mid > 0 && nums[mid] < nums[mid - 1])
+                right = mid;
+            else
+                left = mid;
+        }
+        if (nums[left] > nums[right]) return left;
+        return right;
+    }
+
     public static void main(String[] args) {
+        FindPeakElement obj = new FindPeakElement();
         int[] nums = new int[]{1, 2, 3, 1};
-        System.out.println(findPeakElement(nums));
+        System.out.println(obj.findPeakElement2(nums));
     }
 }

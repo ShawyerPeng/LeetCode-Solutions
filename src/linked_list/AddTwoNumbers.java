@@ -9,12 +9,31 @@ package linked_list;
 public class AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
-        ListNode p = dummy;
+        ListNode cur = dummy;
+        int sum = 0;
+        while (l1 != null || l2 != null) {
+            if (l1 != null) {
+                sum += l1.val;
+                l1 = l1.next;
+            }
+            if (l2 != null) {
+                sum += l2.val;
+                l2 = l2.next;
+            }
+            cur.next = new ListNode(sum % 10);
+            sum /= 10;
+            cur = cur.next;
+        }
+        if (sum == 1) cur.next = new ListNode(1);
+        return dummy.next;
+    }
 
+    public ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
+        ListNode dummy = new ListNode(0);
+        ListNode p = dummy;
         int cn = 0;
         while (l1 != null || l2 != null) {
             int val = cn;
-
             if (l1 != null) {
                 val += l1.val;
                 l1 = l1.next;
@@ -23,19 +42,14 @@ public class AddTwoNumbers {
                 val += l2.val;
                 l2 = l2.next;
             }
-
             // 产生进位cn
             cn = val / 10;
             val = val % 10;
-
             p.next = new ListNode(val);
             p = p.next;
         }
-
         // 当l1、l2都到达链表尾且有进位时
-        if (cn != 0) {
-            p.next = new ListNode(cn);
-        }
+        if (cn != 0) p.next = new ListNode(cn);
         return dummy.next;
     }
 

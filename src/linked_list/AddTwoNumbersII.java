@@ -12,9 +12,9 @@ import java.util.Stack;
 public class AddTwoNumbersII {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
-        ListNode p = dummy;
+        ListNode cur = dummy;
 
-        Stack<Integer> s = new Stack<>();
+        Stack<Integer> stack = new Stack<>();
         Stack<Integer> s1 = new Stack<>();
         Stack<Integer> s2 = new Stack<>();
         while (l1 != null) {
@@ -29,29 +29,24 @@ public class AddTwoNumbersII {
         int cn = 0;
         while (!s1.isEmpty() || !s2.isEmpty()) {
             int val = cn;
-
             if (!s1.isEmpty()) {
                 val += s1.pop();
             }
             if (!s2.isEmpty()) {
                 val += s2.pop();
             }
-
             // 产生进位cn
             cn = val / 10;
             val = val % 10;
-
-            s.push(val);
+            stack.push(val);
         }
 
         // 当l1、l2都到达链表尾且有进位时
-        if (cn != 0) {
-            s.push(cn);
-        }
+        if (cn != 0) stack.push(cn);
 
-        while (!s.isEmpty()) {
-            p.next = new ListNode(s.pop());
-            p = p.next;
+        while (!stack.isEmpty()) {
+            cur.next = new ListNode(stack.pop());
+            cur = cur.next;
         }
 
         return dummy.next;

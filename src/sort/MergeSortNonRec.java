@@ -2,7 +2,7 @@ package sort;
 
 public class MergeSortNonRec {
     public static void mergeSortNonRec(int[] arr) {
-        //使用非递归的方式来实现归并排序
+        // 使用非递归的方式来实现归并排序
         int len = arr.length;
         int k = 1;
 

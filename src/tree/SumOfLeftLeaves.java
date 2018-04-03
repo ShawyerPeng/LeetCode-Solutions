@@ -63,6 +63,33 @@ public class SumOfLeftLeaves {
         return dfs(root.left, true) + dfs(root.right, false);
     }
 
+    /**
+     * 对于结点本身，虽然可以很容易判断其是否为叶子结点，但不能判断其是否为左结点。
+     * 这里有个解决办法就是，既然遍历会遍历到每个结点，那不妨对每个结点检查其左子节点是不是叶子结点就好了
+     */
+    public int sumOfLeftLeaves2(TreeNode root) {
+        if (root == null) return 0;
+        int sum = 0;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            for (int i = 0; i < size; i++) {
+                TreeNode node = queue.poll();
+                if (node.left != null) {
+                    queue.offer(node.left);
+                    if (node.left.left == null && node.left.right == null) {
+                        sum += node.left.val;
+                    }
+                }
+                if (node.right != null) {
+                    queue.offer(node.right);
+                }
+            }
+        }
+        return sum;
+    }
+
     public static void main(String[] args) {
         SumOfLeftLeaves obj = new SumOfLeftLeaves();
         TreeNode root = new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)));
@@ -73,3 +100,4 @@ public class SumOfLeftLeaves {
 }
 // http://www.cnblogs.com/EdwardLiu/p/6117130.html
 // http://www.cnblogs.com/grandyang/p/5923559.html
+// https://dyang2016.wordpress.com/2016/09/29/404-sum-of-left-leaves/

@@ -7,9 +7,7 @@ public class SearchInsertPosition {
 
     // find the first position >= target
     public static int searchInsert(int[] nums, int target) {
-        if (nums == null || nums.length == 0) {
-            return 0;
-        }
+        if (nums == null || nums.length == 0) return 0;
 
         int start = 0, end = nums.length - 1;
 
@@ -33,13 +31,11 @@ public class SearchInsertPosition {
         }
     }
 
-    // find the last position < target, return +1， 要特判一下target小于所有数组里面的元素
+    // find the last position < target, return +1，要特判一下target小于所有数组里面的元素
     public static int searchInsert2(int[] nums, int target) {
-        if (nums == null || nums.length == 0) {
-            return 0;
-        }
-        int start = 0;
-        int end = nums.length - 1;
+        if (nums == null || nums.length == 0) return 0;
+
+        int start = 0, end = nums.length - 1;
         int mid;
 
         if (target < nums[0]) {
@@ -67,6 +63,53 @@ public class SearchInsertPosition {
             return start;
         }
         return start + 1;
+    }
+
+    public int searchInsert3(int[] nums, int target) {
+        int left = 0;
+        int right = nums.length - 1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] < target)
+                left = mid + 1;
+            else if (nums[mid] > target)
+                right = mid - 1;
+            else
+                return mid;
+        }
+        return left;
+    }
+
+    public int searchInsert4(int[] nums, int target) {
+        int left = 0;
+        int right = nums.length;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] < target)
+                left = mid + 1;
+            else if (nums[mid] > target)
+                right = mid;
+            else
+                return mid;
+        }
+        return left;
+    }
+
+    public int searchInsert5(int[] nums, int target) {
+        int left = 0;
+        int right = nums.length - 1;
+        while (left + 1 < right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] < target)
+                left = mid;
+            else if (nums[mid] > target)
+                right = mid;
+            else
+                return mid;
+        }
+        if (nums[left] >= target) return left;
+        else if (nums[right] >= target) return right;
+        else return right + 1;
     }
 
     public static void main(String[] args) {

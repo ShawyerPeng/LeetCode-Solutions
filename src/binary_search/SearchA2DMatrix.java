@@ -1,7 +1,29 @@
 package binary_search;
 
 public class SearchA2DMatrix {
-    public static boolean searchMatrix(int[][] matrix, int target) {
+    public boolean searchMatrix(int[][] matrix, int target) {
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) return false;
+
+        int row = matrix.length;
+        int col = matrix[0].length;
+
+        int left = 0;
+        int right = row * col - 1;
+        while (left + 1 < right) {
+            int mid = left + (right - left) / 2;
+            int value = matrix[mid / col][mid % col];
+            if (value < target)
+                left = mid;
+            else if (value > target)
+                right = mid;
+            else
+                return true;
+        }
+        if (matrix[left / col][left % col] == target || matrix[right / col][right % col] == target) return true;
+        return false;
+    }
+
+    public static boolean searchMatrix2(int[][] matrix, int target) {
         if (matrix == null || matrix.length == 0) {
             return false;
         }
@@ -54,6 +76,7 @@ public class SearchA2DMatrix {
     }
 
     public static void main(String[] args) {
-
+        SearchA2DMatrix obj = new SearchA2DMatrix();
+        System.out.println(obj.searchMatrix(new int[][]{{1, 3, 5, 7}, {10, 11, 16, 20}, {23, 30, 34, 50}}, 3));
     }
 }

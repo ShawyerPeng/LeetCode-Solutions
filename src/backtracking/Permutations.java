@@ -17,9 +17,7 @@ public class Permutations {
         return res;
     }
 
-    private void subsetsHelper(ArrayList<Integer> path,
-                               int[] nums,
-                               List<List<Integer>> res) {
+    private void subsetsHelper(ArrayList<Integer> path, int[] nums, List<List<Integer>> res) {
         if (path.size() == nums.length) {
             res.add(new ArrayList<>(path));
             return;

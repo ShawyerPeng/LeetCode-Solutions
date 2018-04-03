@@ -16,14 +16,14 @@ public class ListNode {
     /**
      * 判断链表是否为空
      */
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return next == null;
     }
 
     /**
      * 初始化链表
      */
-    static ListNode getSingleList() {
+    public static ListNode getSingleList() {
         ListNode head = new ListNode(3);
         ListNode node1 = new ListNode(2);
         ListNode node2 = new ListNode(2);
@@ -38,7 +38,7 @@ public class ListNode {
     /**
      * 初始化链表
      */
-    static ListNode buildListNode(int[] input) {
+    public static ListNode buildListNode(int[] input) {
         ListNode first = null, last = null, newNode;
         if (input.length > 0) {
             for (int i = 0; i < input.length; i++) {
@@ -60,7 +60,7 @@ public class ListNode {
     /**
      * 打印链表
      */
-    static void printList(ListNode node) {
+    public static void printList(ListNode node) {
         System.out.print("List:");
         while (node != null) {
             System.out.print(node.val);
@@ -75,7 +75,7 @@ public class ListNode {
     /**
      * 在指定位置增加节点
      */
-    static ListNode addNode(ListNode head, ListNode add, int id) {
+    public static ListNode addNode(ListNode head, ListNode add, int id) {
         if (id == 0) {
             add.next = head;
             head = add;
@@ -93,7 +93,7 @@ public class ListNode {
     /**
      * 删除指定值的节点（删除链表中等于给定值val的所有节点）
      */
-    static ListNode removeElements(ListNode head, int val) {
+    public static ListNode removeElements(ListNode head, int val) {
         // 判断 head 是不是空，为空就直接返回 null
         if (head == null) return null;
 
@@ -123,7 +123,7 @@ public class ListNode {
     /**
      * 删除指定位置的节点
      */
-    static ListNode removeElementsAt(ListNode head, int id) {
+    public static ListNode removeElementsAt(ListNode head, int id) {
         // 判断 head 是不是空，为空就直接返回 null
         if (head == null) return null;
 

@@ -2,20 +2,19 @@ package binary_search;
 
 public class FirstBadVersion {
     public int firstBadVersion(int n) {
-        int start = 1, end = n;
-        while (start + 1 < end) {
-            int mid = start + (end - start) / 2;
+        int left = 1;
+        int right = n;
+        while (left + 1 < right) {
+            int mid = left + (right - left) / 2;
             if (isBadVersion(mid)) {
-                end = mid;
+                right = mid;
             } else {
-                start = mid;
+                left = mid;
             }
         }
 
-        if (isBadVersion(start)) {
-            return start;
-        }
-        return end;
+        if (isBadVersion(left)) return left;
+        return right;
     }
 
     private Boolean isBadVersion(int version) {

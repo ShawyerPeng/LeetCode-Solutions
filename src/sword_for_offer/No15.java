@@ -3,6 +3,7 @@ package sword_for_offer;
 import linked_list.ListNode;
 
 /**
+ * https://www.nowcoder.com/questionTerminal/529d3ae5a407492994ad2a246518148a
  * 问题：链表中倒数第 k 个结点。
  * 思路：
  * 一般思路是：先走到链表的尾端，再回溯 k 步，但由于是单向链表，该思路行不通。
@@ -37,7 +38,7 @@ public class No15 {
 
     public static void main(String[] args) {
         No15 obj = new No15();
-        //System.out.println(obj.FindKthToTail());
+        System.out.println(obj.FindKthToTail(ListNode.buildListNode(new int[]{1, 2, 3, 4, 5}), 2).val);
     }
 }
 // http://blog.csdn.net/abc7845129630/article/details/52724583

@@ -42,7 +42,6 @@ public class SortList {
         return dummy.next;
     }
 
-
     public static void main(String[] args) {
         ListNode l1 = ListNode.buildListNode(new int[]{2,4,3,7,0});
         ListNode.printList(l1);

@@ -20,10 +20,7 @@ public class Subsets {
         return res;
     }
 
-    private void subsetsHelper(ArrayList<Integer> path,
-                               int[] nums,
-                               int pos,
-                               List<List<Integer>> res) {
+    private void subsetsHelper(ArrayList<Integer> path, int[] nums, int pos, List<List<Integer>> res) {
         res.add(new ArrayList<>(path));
 
         for (int i = pos; i < nums.length; i++) {
