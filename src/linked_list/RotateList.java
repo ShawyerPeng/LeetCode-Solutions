@@ -11,21 +11,23 @@ public class RotateList {
 
         ListNode index = head;
         int len = 1;
-        // 因为k可能大于链表长度len，所以需要取余处理
         // 得到链表长度
         while (index.next != null) {
             index = index.next;
             len++;
         }
+        // 因为k可能大于链表长度len，所以需要取余处理
         k %= len;
 
-        // 连接成环
+        // 链表首尾连成一个环
         index.next = head;
+        // 得到新的链表头
         for (int i = 1; i < len - k; i++) {
             head = head.next;
         }
-        // 得到新的链表头并断开环
+        // res是新的head
         ListNode res = head.next;
+        // 断开环
         head.next = null;
         return res;
     }
