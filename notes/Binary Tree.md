@@ -4,7 +4,7 @@ DFS：Stack
 
 # 面试题分类
 ## 遍历二叉树
-* 二叉树中的遍历（前序遍历，中序遍历，后序遍历）
+* 二叉树的遍历（前序遍历，中序遍历，后序遍历）
     * Binary Tree DFS Traversal
     * Binary Tree BFS Traversal
     * Divide & Conquer（Merge Sort、Quick Sort）

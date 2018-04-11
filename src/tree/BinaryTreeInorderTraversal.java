@@ -15,24 +15,23 @@ import java.util.Stack;
  */
 public class BinaryTreeInorderTraversal {
     public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> results = new ArrayList<>();
+        if (root == null) return results;
         Stack<TreeNode> stack = new Stack<>();
-        List<Integer> result = new ArrayList<>();
-        if (root == null) return result;
-
         TreeNode node = root;
         while (node != null || !stack.empty()) {
+            // 左孩子依次入栈，访问最左孩子
             while (node != null) {
-                // 左孩子依次入栈，访问最左孩子
                 stack.push(node);
                 node = node.left;
             }
-            // 访问根节点
+            // cur为空循环结束，说明已经到达最左下节点，访问它并添加到结果
             node = stack.pop();
-            result.add(node.val);
+            results.add(node.val);
             // 把根节点右孩子当做当前节点
             node = node.right;
         }
-        return result;
+        return results;
     }
 
     public static void main(String[] args) {

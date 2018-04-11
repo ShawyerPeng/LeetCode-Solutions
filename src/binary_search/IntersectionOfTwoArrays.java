@@ -87,9 +87,7 @@ public class IntersectionOfTwoArrays {
             set.add(num);
         }
         for (Integer num : nums2) {
-            if (set.contains(num)) {
-                ret.add(num);
-            }
+            if (set.contains(num)) ret.add(num);
         }
         int k = 0;
         int[] res = new int[set.size()];

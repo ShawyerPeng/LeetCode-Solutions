@@ -10,36 +10,30 @@ import template.TreeNode;
  * 2. 最长路径没有经过根节点：这个问题就分为两个子问题，分别设置新的根节点为其左子节点和右子节点，然后重复步骤 1
  */
 public class DiameterOfBinaryTree {
+    private int diameter = 0;
+
     public int diameterOfBinaryTree(TreeNode root) {
-        if (root == null) return 0;
-        return 1;
-    }
-
-    // 全局变量，记录最大直径
-    int diameter = 0;
-
-    public int diameterOfBinaryTreeDFS(TreeNode root) {
         // 空节点或者左右孩子均为空的节点
         if (root == null || (root.left == null && root.right == null)) return 0;
-        dfs(root);
+        helper(root);
         return diameter;
     }
 
-    // 此函数是返回树的最大深度
-    private int dfs(TreeNode root) {
+    // 此函数返回树的最大深度
+    private int helper(TreeNode root) {
         if (root == null) return 0;
-        int left = dfs(root.left);
-        int right = dfs(root.right);
+        int left = helper(root.left);
+        int right = helper(root.right);
         // 左子树和右子树的深度相加就是根该节点的直径
-        if (left + right > diameter) diameter = left + right;
+        diameter = Math.max(diameter, left + right);
         // 返回节点左右子树中较大的深度
-        return right > left ? right + 1 : left + 1;
+        return Math.max(left, right) + 1;
     }
 
     public static void main(String[] args) {
         DiameterOfBinaryTree obj = new DiameterOfBinaryTree();
         TreeNode root = new TreeNode(1, new TreeNode(2, new TreeNode(4), new TreeNode(5)), new TreeNode(3));
-        System.out.println(obj.diameterOfBinaryTreeDFS(root));
+        System.out.println(obj.diameterOfBinaryTree(root));
     }
 }
 // http://blog.csdn.net/u012814856/article/details/76212141

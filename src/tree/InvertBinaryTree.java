@@ -11,13 +11,11 @@ import java.util.Stack;
  */
 public class InvertBinaryTree {
     public TreeNode invertTree(TreeNode root) {
-        if (root == null) return null;
-
+        if (root == null) return root;
         // 将当前节点的左右分支进行对调反转
         TreeNode temp = root.left;
         root.left = root.right;
         root.right = temp;
-
         // 若左分支存在，则递归左分支的节点
         if (root.left != null) invertTree(root.left);
         // 若右分支存在，则递归右分支的节点
@@ -28,7 +26,6 @@ public class InvertBinaryTree {
 
     public TreeNode invertTree2(TreeNode root) {
         if (root == null) return null;
-
         TreeNode tmp = root.left;
         root.left = invertTree2(root.right);
         root.right = invertTree2(tmp);
@@ -39,10 +36,10 @@ public class InvertBinaryTree {
      * 先序遍历非递归
      */
     public TreeNode invertTreeStack(TreeNode root) {
-        if(root == null) return root;
+        if (root == null) return root;
         Stack<TreeNode> stack = new Stack<>();
-        TreeNode cur;
         stack.push(root);
+        TreeNode cur;
         while (!stack.empty()) {
             cur = stack.peek();
             stack.pop();

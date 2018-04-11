@@ -109,12 +109,11 @@ public class SearchInsertPosition {
         }
         if (nums[left] >= target) return left;
         else if (nums[right] >= target) return right;
-        else return right + 1;
+        else return right + 1;// 找不到要找的数字的情况，此时应返回数组长度
     }
 
     public static void main(String[] args) {
-        int[] nums = new int[]{1, 3, 5, 6};
-        int target = 5;
-        searchInsert(nums, target);
+        SearchInsertPosition obj = new SearchInsertPosition();
+        System.out.println(obj.searchInsert5(new int[]{1, 3, 5, 6}, 5));
     }
 }

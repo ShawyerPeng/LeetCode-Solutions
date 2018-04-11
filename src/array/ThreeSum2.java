@@ -7,9 +7,8 @@ import java.util.List;
 
 public class ThreeSum2 {
     public List<List<Integer>> threeSum(int[] nums) {
-        List<List<Integer>> res = new ArrayList<>();
-        if (nums.length < 3)
-            return res;
+        List<List<Integer>> results = new ArrayList<>();
+        if (nums.length < 3) return results;
 
         Arrays.sort(nums);
 
@@ -23,24 +22,20 @@ public class ThreeSum2 {
             while (low < high) {
                 int sum = nums[i] + nums[low] + nums[high];
                 if (sum == 0) {
-                    ArrayList<Integer> temp = new ArrayList<>();
-                    temp.add(nums[i]);
-                    temp.add(nums[low]);
-                    temp.add(nums[high]);
-
-                    res.add(temp);
-
+                    results.add(Arrays.asList(nums[i], nums[low], nums[high]));
                     low++;
                     high--;
-                    while (low < high && nums[low] == nums[low - 1])//remove dupicate
-                        low++;
-                    while (low < high && nums[high] == nums[high + 1])//remove dupicate
-                        high--;
-                } else if (sum < 0) low++;
-                else high--;
+                    // 防止重复解
+                    while (low < high && nums[low] == nums[low - 1]) low++;
+                    while (low < high && nums[high] == nums[high + 1]) high--;
+                } else if (sum < 0) {
+                    low++;
+                } else {
+                    high--;
+                }
             }
         }
-        return res;
+        return results;
     }
 
     public static void main(String[] args) {

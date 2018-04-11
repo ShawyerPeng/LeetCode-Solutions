@@ -22,7 +22,6 @@ public class MaximumWidthOfBinaryTree {
         queue.offer(root);
         // 在顶层跟结点位置为1
         queuePos.add(1);
-
         // 首先判断此队列是否为空
         while (!queue.isEmpty()) {
             int size = queue.size();

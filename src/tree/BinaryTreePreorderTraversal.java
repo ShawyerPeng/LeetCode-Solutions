@@ -13,18 +13,18 @@ import java.util.Stack;
  */
 public class BinaryTreePreorderTraversal {
     public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> results = new ArrayList<>();
+        if (root == null) return results;
         Stack<TreeNode> stack = new Stack<>();
-        List<Integer> result = new ArrayList<>();
-        if (root == null) return result;
-
         stack.push(root);
         while (!stack.empty()) {
             TreeNode node = stack.pop();
-            result.add(node.val);
+            results.add(node.val);
+            // 先压右后压左，这样pop遍历时的顺序就是先左后右
             if (node.right != null) stack.push(node.right);
             if (node.left != null) stack.push(node.left);
         }
-        return result;
+        return results;
     }
 
     public static void main(String[] args) {

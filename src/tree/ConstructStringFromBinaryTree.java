@@ -6,11 +6,11 @@ import template.TreeNode;
  * https://leetcode.com/problems/construct-string-from-binary-tree
  * 问题：根据二叉树创建字符串
  * Input: Binary tree: [1,2,3,null,4]
- *    1
- *  /   \
+ * 1
+ * /   \
  * 2     3
- *  \
- *   4
+ * \
+ * 4
  * Output: "1(2()(4))(3)"
  * 思路：如果左子结点为空，右子结点不为空时，需要在父结点后加上个空括号，而右子结点如果不存在，或者左右子结点都不存在就不需要这么做
  * 如果当前结点不存在，直接返回，然后要在当前结点值前面加上左括号，然后判断，如果左子结点不存在，而右子结点存在的话，要在结果 res 后加上个空括号
@@ -23,7 +23,6 @@ import template.TreeNode;
 public class ConstructStringFromBinaryTree {
     public String tree2str(TreeNode t) {
         if (t == null) return "";
-
         StringBuilder sb = new StringBuilder();
         helper(t, sb);
         // 去掉首尾的括号
@@ -35,10 +34,8 @@ public class ConstructStringFromBinaryTree {
         if (t == null) return;
         // 在当前结点值前面加上左括号
         sb.append("(" + t.val);
-
         // 如果左子结点不存在而右子结点存在，要在结果 sb 后加上个空括号
         if (t.left == null && t.right != null) sb.append("()");
-
         // 分别对左右子结点调用递归函数
         helper(t.left, sb);
         helper(t.right, sb);
@@ -52,4 +49,3 @@ public class ConstructStringFromBinaryTree {
         System.out.println(obj.tree2str(t));
     }
 }
-// http://www.cnblogs.com/grandyang/p/7000040.html

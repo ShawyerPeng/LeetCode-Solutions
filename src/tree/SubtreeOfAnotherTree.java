@@ -14,22 +14,20 @@ import java.util.Queue;
 public class SubtreeOfAnotherTree {
     public boolean isSubtree(TreeNode s, TreeNode t) {
         if (s == null) return false;
-
-        // 先从 s 的根结点开始，跟 t 比较，如果两棵树完全相同，那么返回 true
-        if (dfs(s, t)) return true;
-
-        // 否则就分别对 s 的左子结点和右子结点调用递归再次来判断是否相同，只要有一个返回 true 了，就表示可以找得到
-        return dfs(s.left, t) || dfs(s.right, t);
+        // 先从s的根结点开始，跟t比较，如果两棵树完全相同，那么返回true
+        if (isSameTree(s, t)) return true;
+        // 否则就分别对s的左子结点和右子结点调用递归再次来判断是否相同，只要有一个返回true了，就表示可以找得到
+        return isSameTree(s.left, t) || isSameTree(s.right, t);
+        // 上面的不能Accept，下面一行可以解决所有test case
+        //return s != null && (isSameTree(s, t) || isSubtree(s.left, t) || isSubtree(s.right, t));
     }
 
-    private boolean dfs(TreeNode s, TreeNode t) {
+    private boolean isSameTree(TreeNode s, TreeNode t) {
         if (s == null && t == null) return true;
         if (s == null || t == null) return false;
-
         if (s.val != t.val) return false;
-
         // 左右子树都完全相同，两棵树才完全相等
-        return dfs(s.left, t.left) && dfs(s.right, t.right);
+        return isSameTree(s.left, t.left) && isSameTree(s.right, t.right);
     }
 
     /**
@@ -45,15 +43,6 @@ public class SubtreeOfAnotherTree {
             if (node.right != null) nodes.offer(node.right);
         }
         return false;
-    }
-
-    private boolean isSameTree(TreeNode s, TreeNode t) {
-        if (s == null && t == null) return true;
-        if (s == null || t == null) return false;
-
-        if (s.val != t.val) return false;
-
-        return isSameTree(s.left, t.left) && isSameTree(s.right, t.right);
     }
 
     public static void main(String[] args) {

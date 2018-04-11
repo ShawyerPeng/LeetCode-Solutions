@@ -10,20 +10,22 @@ import template.TreeNode;
 public class LongestUnivaluePath {
     private int maxLen;
 
-    public int longestUnivaluePath(TreeNode node) {
-        if (node == null) return 0;
-        dfs(node);
+    public int longestUnivaluePath(TreeNode root) {
+        if (root == null) return 0;
+        helper(root);
         return maxLen;
     }
 
-    private int dfs(TreeNode node) {
-        if (node == null) return 0;
-
-        int left = dfs(node.left);
-        int right = dfs(node.right);
-        left = (node.left != null && node.val == node.left.val) ? left + 1 : 0;
-        right = (node.right != null && node.val == node.right.val) ? right + 1 : 0;
+    private int helper(TreeNode root) {
+        if (root == null) return 0;
+        // 求出左右子树的单边最长UnivaluePath
+        int left = helper(root.left);
+        int right = helper(root.right);
+        left = (root.left != null && root.val == root.left.val) ? left + 1 : 0;
+        right = (root.right != null && root.val == root.right.val) ? right + 1 : 0;
+        // 可以更新双边的情况
         maxLen = Math.max(maxLen, left + right);
+        // 只能返回长度较大的一边
         return Math.max(left, right);
     }
 

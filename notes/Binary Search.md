@@ -11,13 +11,15 @@
 # 注意点
 * 中间值取整方式：向下取整`left+(right-left)/2`, 向上取整`right-(right-left)/2`
 * 区间开闭：闭区间`[left,right]`、左闭右开区间`[left,right)`、左开右闭区间`(left,right]`、开区间`(left,right)`
-* 终止条件：区间长度为零`left<right`、区间长度为1`left+1<=right`（`left<=right`）
+* 循环终止条件：区间长度为零`left<right`、区间长度为1`left+1<=right`（`left<=right`）
 * 分半的时候取=`mid`, `mid-1`, or `mid+1`
 * 问题类型
     * 对于不下降序列a，求最小的i，使得`a[i] = key`
     * 对于不下降序列a，求最大的i，使得`a[i] = key`
     * 对于不下降序列a，求最小的i，使得`a[i] > key`
     * 对于不下降序列a，求最大的i，使得`a[i] < key`
+
+
 
 # 问题思考
 ## 何时该 return left;何时该 return right？
@@ -107,6 +109,9 @@ while(fabs(right-left)>eps)//判断语句
     2、eps的值够精度，不然很容易wa
 
 ## 二分法搜索模板
+与传统的二分查找相比，该方法的最大差别就是不在while中就直接确定出最优解，而是通过 start + 1 < end, 保留两个可能的情况，然后再进行判定。
+这种方式的好处是增加了算法的适用性，减少出错。
+
 为什么不是(end-start+1)/2？
 这样不等价于(start+end)/2
 
@@ -235,20 +240,19 @@ public static int binarySearch(int[] nums, int target) {
 * Sqrt(x)
 
 # 相关题目
-## 374. Guess Number Higher or Lower
-https://leetcode.com/problems/guess-number-higher-or-lower
+
 
 
 
 # 参考资料
-* [算法之美——二分法](https://blog.bcmeng.com/post/binarysearch.html)  
-* [一起 lintcode ------- 二分查找看这篇就够了](http://community.bittiger.io/topic/241/%E4%B8%80%E8%B5%B7lintcode-%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E7%9C%8B%E8%BF%99%E7%AF%87%E5%B0%B1%E5%A4%9F%E4%BA%86)  
-* [LintCode 二分查找题总结](http://blog.csdn.net/luoshengkim/article/details/52103427)  
-* [LeetCode-Binary-Search](http://52.14.116.56/2017/08/23/LeetCode/LeetCode-Binary-Search/)  
-* [Binary Search](https://lefttree.gitbooks.io/leetcode-categories/BinarySearch/binarySearch.html)  
-* [关于二分查找 (Binary Search) 及其变种形式的总结](https://simpleandstupid.com/2014/12/23/%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E7%9A%84%E6%80%BB%E7%BB%93/)  
+* [算法之美——二分法](https://blog.bcmeng.com/post/binarysearch.html)
+* [一起 lintcode ------- 二分查找看这篇就够了](http://community.bittiger.io/topic/241/一起lintcode-二分查找看这篇就够了/)
+* [LintCode 二分查找题总结](http://blog.csdn.net/luoshengkim/article/details/52103427)
+* [LeetCode-Binary-Search](http://52.14.116.56/2017/08/23/LeetCode/LeetCode-Binary-Search/)
+* [Binary Search](https://lefttree.gitbooks.io/leetcode-categories/BinarySearch/binarySearch.html)
+* [关于二分查找 (Binary Search) 及其变种形式的总结](https://simpleandstupid.com/2014/12/23/关于二分查找的总结/)
 * [Binary Search 二分查找总结](http://pengmeng.me/2016/03/07/binary-search-note.html)  
-* [Binary Search(二分搜索) 总结](https://dyang2016.wordpress.com/2016/11/07/binary-search%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2%E6%80%BB%E7%BB%93/)  
+* [Binary Search(二分搜索) 总结](https://dyang2016.wordpress.com/2016/11/07/binary-search二分搜索总结/)  
 * [漫谈二分查找 - Binary Search](http://duanple.blog.163.com/blog/static/709717672009049528185/)  
 * [数组中的二分法查找](http://www.jianshu.com/p/7c17cc56e21e)  
 * [binary search 及扩展出来的几个问题讨论](http://shmilyaw-hotmail-com.iteye.com/blog/1626910)  
@@ -266,3 +270,10 @@ https://leetcode.com/problems/guess-number-higher-or-lower
 * [二分查找各种情况大总结](https://blog.csdn.net/yefengzhichen/article/details/52372407)
 * [二分查找专题（二）](https://blog.csdn.net/qq_21688757/article/details/53907379)
 * [LeetCode Binary Search Summary 二分搜索法小结](http://www.cnblogs.com/grandyang/p/6854825.html)
+* [二分查找的一些注意事项](https://blog.csdn.net/zhouyelihua/article/details/46665931)
+* [二分查找上界和下界](http://zhangxiaoya.github.io/2015/06/26/upper-bound-and-lower-bound-of-binary-search/)
+* [二分查找(Binary Search)需要注意的问题，以及在数据库内核中的实现](http://hedengcheng.com/?p=595)
+* [二分查找（面试必备）](https://segmentfault.com/a/1190000008699980)
+* [九章算法讲座-2017-01-07之二分法面试中的应用](https://www.youtube.com/watch?v=C2FqVkT982A)
+* [有序数组的查找](https://wizardforcel.gitbooks.io/the-art-of-programming-by-july/content/04.01.html)
+* [[二分/排序/搜索] 问一个关于binary search循环跳出条件的问题](http://www.1point3acres.com/bbs/thread-161799-1-1.html)

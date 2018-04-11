@@ -14,7 +14,6 @@ import java.util.Stack;
 public class ValidateBinarySearchTree {
     public boolean isValidBST(TreeNode root) {
         if (root == null) return true;
-
         Stack<TreeNode> stack = new Stack<>();
         TreeNode node = root;
         List<Integer> results = new ArrayList<>();
@@ -34,15 +33,14 @@ public class ValidateBinarySearchTree {
     }
 
     public boolean isValidBSTDFS(TreeNode root) {
-        return isValidBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+        return helper(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
 
-    private boolean isValidBST(TreeNode root, int left, int right) {
+    private boolean helper(TreeNode root, int left, int right) {
         if (root == null) return true;
-
         return root.val > left && root.val < right
-                && isValidBST(root.left, left, root.val)
-                && isValidBST(root.right, root.val, right);
+                && helper(root.left, left, root.val)
+                && helper(root.right, root.val, right);
     }
 
     public static void main(String[] args) {

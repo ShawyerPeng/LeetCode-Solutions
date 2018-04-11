@@ -2,17 +2,30 @@ package tree;
 
 import template.TreeNode;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
-
 /**
  * https://leetcode.com/problems/binary-tree-tilt
  * 问题：二叉树的坡度定义为该结点的左子树之和与右子树之和的差的绝对值，求所有结点的坡度之和。
  * 思路：后序遍历，这样就可以从叶子结点开始搜索，便于求和
  */
 public class BinaryTreeTilt {
+    private int res = 0;
+
+    public int findTilt(TreeNode root) {
+        if (root == null) return 0;
+        helper(root);
+        return res;
+    }
+
+    private int helper(TreeNode root) {
+        if (root == null) return 0;
+        int left = helper(root.left);
+        int right = helper(root.right);
+        // 左右子树的差的绝对值
+        res += Math.abs(left - right);
+        // 函数的返回值是当前根节点的值加上左右子树的和
+        return left + right + root.val;
+    }
+
     //public int findTilt(TreeNode root) {
     //    if (root == null || root.left == null && root.right == null) return 0;
     //
@@ -56,7 +69,7 @@ public class BinaryTreeTilt {
         if (root == null) return 0;
         int left = dfs(root.left, result);
         int right = dfs(root.right, result);
-        result[0] += Math.abs(left - right);         // 左右子树的差的绝对值
+        result[0] += Math.abs(left - right);
         return left + right + root.val;
     }
 

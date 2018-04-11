@@ -1,7 +1,5 @@
 package dynamic_programming;
 
-import java.util.Arrays;
-
 public class MaximumSubarray {
     public static int maxSubArray(int[] nums) {
         if (nums == null || nums.length == 0) return -1;

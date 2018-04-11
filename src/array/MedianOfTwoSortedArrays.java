@@ -48,10 +48,6 @@ public class MedianOfTwoSortedArrays {
         return (c1 + c2) * 0.5;
     }
 
-    //public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-    //
-    //}
-
     public static void main(String[] args) {
         MedianOfTwoSortedArrays obj = new MedianOfTwoSortedArrays();
         System.out.println(obj.findMedianSortedArrays(new int[]{1, 3}, new int[]{2}));

@@ -1,6 +1,5 @@
 package sword_for_offer;
 
-import breadth_first_search.SymmetricTree;
 import template.TreeNode;
 
 /**

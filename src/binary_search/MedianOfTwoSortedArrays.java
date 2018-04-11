@@ -6,9 +6,7 @@ public class MedianOfTwoSortedArrays {
         if (len % 2 == 1) {
             return findKth(nums1, 0, nums2, 0, len / 2 + 1);
         }
-        return (
-                findKth(nums1, 0, nums2, 0, len / 2) + findKth(nums1, 0, nums2, 0, len / 2 + 1)
-        ) / 2.0;
+        return (findKth(nums1, 0, nums2, 0, len / 2) + findKth(nums1, 0, nums2, 0, len / 2 + 1)) / 2.0;
     }
 
     // find kth number of two sorted array

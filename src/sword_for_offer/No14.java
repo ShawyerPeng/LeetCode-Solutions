@@ -83,10 +83,58 @@ public class No14 {
         }
     }
 
+    public void reorderOddEven4(int[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] % 2 == 0) {
+                for (int j = i + 1; j < nums.length; j++) {
+                    if (nums[j] % 2 != 0) {
+                        int temp = nums[j];
+                        for (int k = j; k > i; k--) {
+                            nums[k] = nums[k - 1];
+                        }
+                        nums[i] = temp;
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * 插入排序思想
+     */
+    public void reorderOddEven5(int[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] % 2 == 1) {
+                int temp = nums[i];
+                int j = i - 1;
+                while (j >= 0 && nums[j] % 2 == 0) {
+                    nums[j + 1] = nums[j];
+                    j--;
+                }
+                nums[j + 1] = temp;
+            }
+        }
+    }
+
+    public void reorderOddEven6(int[] nums) {
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] % 2 == 1) {
+                int temp = nums[i];
+                int j = i;
+                while (j >= 1 && nums[j - 1] % 2 == 0) {
+                    nums[j] = nums[j - 1];
+                    j--;
+                }
+                nums[j] = temp;
+            }
+        }
+    }
+
     public static void main(String[] args) {
         No14 obj = new No14();
         int[] nums = new int[]{1, 4, 7, 5, 8, 9, 3, 1, 0};
-        obj.reorderOddEven(nums);
+        obj.reorderOddEven4(nums);
         System.out.println(Arrays.toString(nums));
     }
 }

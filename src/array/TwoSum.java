@@ -33,8 +33,7 @@ public class TwoSum {
      */
     public int[] twoSum2(int[] nums, int target) {
         int[] res = new int[2];
-        if (nums == null || nums.length < 2)
-            return res;
+        if (nums == null || nums.length < 2) return res;
 
         // 复制原始数组并排序
         int[] copylist = new int[nums.length];

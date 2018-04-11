@@ -14,17 +14,16 @@ import java.util.Stack;
 public class SumOfLeftLeaves {
     public int sumOfLeftLeaves(TreeNode root) {
         if (root == null || root.left == null && root.right == null) return 0;
-
         int sum = 0;
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
         while (!queue.isEmpty()) {
-            TreeNode curr = queue.poll();
+            TreeNode node = queue.poll();
             // 左节点不为空且左节点是叶子结点，则把左节点的值添加到和里
-            if (curr.left != null && curr.left.left == null && curr.left.right == null) sum += curr.left.val;
+            if (node.left != null && node.left.left == null && node.left.right == null) sum += node.left.val;
             // 左右子节点入栈
-            if (curr.left != null) queue.offer(curr.left);
-            if (curr.right != null) queue.offer(curr.right);
+            if (node.left != null) queue.offer(node.left);
+            if (node.right != null) queue.offer(node.right);
         }
         return sum;
     }
